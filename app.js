@@ -9,7 +9,7 @@ const data = {
     {"title":"antiphon and chorale","year":2023,"category":"Orchestral & Large Ensemble","duration":"6′","premiere":"19 Jan 2024, KMH Stockholm; cond. Tom Poulson","instrumentation":"Brass ensemble","score_link":"https://www.svenskmusik.org/en/works/antiphon-and-chorale-187751","withdrawn":false},
     {"title":"Pilgrimages","year":2023,"category":"Orchestral & Large Ensemble","duration":"13′","premiere":"2 Apr 2023, Culturum, Nyköping; Nyköpings Filharmoniker, cond. Simon Crawford-Phillips","instrumentation":"Sinfonietta","score_link":"https://www.svenskmusik.org/en/works/pilgrimages-overture-rhapsodyfor-sinfonietta-180360","withdrawn":true},
     {"title":"THE RULES OF FORESTRY","year":2022,"category":"Orchestral & Large Ensemble","duration":"6′","premiere":"19 Nov 2022, Queen Silvia Concert Hall, Stockholm; cond. Mark Tatlow","instrumentation":"Chamber orchestra","score_link":"https://www.svenskmusik.org/en/works/the-rules-of-forestry-poem-for-chamber-orchestra-180550","withdrawn":false},
-    {"title":"Kalemegdan and the Danube","year":2022,"category":"Orchestral & Large Ensemble","duration":"10′","premiere":"8 May 2022, KMH, Stockholm; KMH Symphony Orchestra, cond. Daniel Hansson","instrumentation":"Symphony orchestra","score_link":"","withdrawn":true},
+    {"title":"Kalemegdan and the Danube","year":2022,"category":"Orchestral & Large Ensemble","duration":"10′","premiere":"8 May 2022, KMH, Stockholm; KMH Symphony Orchestra, cond. Hanna Ohlson Nordh","instrumentation":"Symphony orchestra","score_link":"","withdrawn":true},
 
     {"title":"ein traum…","year":2024,"category":"Chamber Music","duration":"5′","premiere":"4 Aug 2024, Ceplis, Latvia; Jānis Vītols, Vigovajk Sagvik & Anželika Levičeva","instrumentation":"Flute, cello, piano","score_link":"","withdrawn":false,"needs_contact":true},
     {"title":"echoes from the tatras","year":2023,"category":"Chamber Music","duration":"14′","premiere":"28 Apr 2024, Hjortenbergskyrkan Nyköping; Söndagskvartetten","instrumentation":"String quartet","score_link":"https://www.svenskmusik.org/en/works/echoes-from-the-tatras-187746","withdrawn":false},
@@ -40,7 +40,9 @@ const data = {
     "antiphon and chorale":"https://soundcloud.com/mkrawczykcomposer/antiphon-and-chorale-2024",
     "echoes from the tatras":"https://soundcloud.com/mkrawczykcomposer/string-quartet-echoes-from-the-tatras-2023/s-MoydMzfaJc3",
     "Threnody XV":"https://soundcloud.com/mkrawczykcomposer/threnody-xv-2024",
-    "ANGELUS":"https://soundcloud.com/mkrawczykcomposer/angelus-2024"
+    "ANGELUS":"https://soundcloud.com/mkrawczykcomposer/angelus-2024",
+    "Étude in Musical Machinery": "https://soundcloud.com/mkrawczykcomposer/etude-in-musical-machinery-2025/s-vW4dQ98qrvS?si=77075243e9e74bf199d514c0bd4832b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+"Bajki": "https://soundcloud.com/mkrawczykcomposer/horn-concertino-bajki-2025/s-BGLqJpzH2KI?si=954bd41a73e64dcfa86cd14a6656f557&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
   },
   "upcoming":[
     {"title":"Clarinet Quintet","premiere":"4 Sep 2025, Berwaldhallen","description":"Waves Arts Lab commission","link":"https://www.berwaldhallen.se/konsert/waves-arts-lab-med-voksenasen"},
