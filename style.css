@@ -1400,7 +1400,7 @@ select.form-control {
 .hero {
   height: 40vh;
   min-height: 400px;
-  background: #1a4a8b; /* Darker blue */
+  background: url('sheet.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1408,6 +1408,23 @@ select.form-control {
   color: white;
   position: relative;
 }
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 74, 139, 0.6);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 .hero-content {
   max-width: 800px;
