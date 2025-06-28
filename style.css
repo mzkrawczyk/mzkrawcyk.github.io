@@ -1401,7 +1401,7 @@ select.form-control {
   height: 40vh;
   min-height: 400px;
   background: linear-gradient(rgba(33, 128, 141, 0.3), rgba(33, 128, 141, 0.3)), 
-              url('photo-square.jpg') center/cover;
+              url('photo_-square.jpg') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
