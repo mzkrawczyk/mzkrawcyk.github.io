@@ -24,7 +24,7 @@ const data = {
 
     {"title":"O, przyjdź do mnie","year":2023,"category":"Choral & Vocal","duration":"4′","premiere":"17 Nov 2023, Queen Silvia Concert Hall, Stockholm; En Kör","instrumentation":"SATB choir","score_link":"https://www.svenskmusik.org/en/works/o-przyjdz-do-mnie-187090","withdrawn":false},
     {"title":"in the waters of purity","year":2022,"category":"Choral & Vocal","duration":"6′","premiere":"11 Feb 2023, MUBA, Tallinn; Iris Oja & Kadri-Ann Sumera","instrumentation":"Soprano & piano","score_link":"https://www.svenskmusik.org/en/works/in-the-waters-of-purity-184307","withdrawn":false},
-    {"title":"Himlen har landat","year":2020,"category":"Choral & Vocal","duration":"4′","premiere":"24 Dec 2020, S:t Nicolai, Nyköping; En Kör, dir. Anna-Lena Engström","instrumentation":"SATB & organ","score_link":"","withdrawn":true}
+    {"title":"Himlen har landat","year":2020,"category":"Choral & Vocal","duration":"4′","premiere":"29 Oct 2023, Strängnäs Cathedral","instrumentation":"SATB & organ","score_link":"","withdrawn":true}
   ],
   "recordings": {
     "soundcloud":"https://soundcloud.com/mkrawczykcomposer",
