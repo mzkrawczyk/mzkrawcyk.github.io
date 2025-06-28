@@ -1400,8 +1400,7 @@ select.form-control {
 .hero {
   height: 40vh;
   min-height: 400px;
-  background: linear-gradient(rgba(33, 128, 141, 0.3), rgba(33, 128, 141, 0.3)), 
-              url('photo-square.jpg') center/cover;
+  background: #1a4a8b; /* Darker blue */
   display: flex;
   align-items: center;
   justify-content: center;
