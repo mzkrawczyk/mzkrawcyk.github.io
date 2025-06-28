@@ -1,7 +1,6 @@
 // Application data
 const data = {
   "works": [
-    [
   {
     "title": "Étude in Musical Machinery",
     "year": 2025,
@@ -95,7 +94,6 @@ const data = {
     "score_link": "",
     "withdrawn": true
   }
-]
 
     {"title":"ein traum…","year":2024,"category":"Chamber Music","duration":"5′","premiere":"4 Aug 2024, Ceplis, Latvia; Jānis Vītols, Vigovajk Sagvik & Anželika Levičeva","instrumentation":"Flute, cello, piano","score_link":"","withdrawn":false,"needs_contact":true},
     {"title":"echoes from the tatras","year":2023,"category":"Chamber Music","duration":"14′","premiere":"28 Apr 2024, Hjortenbergskyrkan Nyköping; Söndagskvartetten","instrumentation":"String quartet","score_link":"https://www.svenskmusik.org/en/works/echoes-from-the-tatras-187746","withdrawn":false},
