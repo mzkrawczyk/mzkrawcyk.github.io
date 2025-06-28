@@ -1,6 +1,5 @@
 // Application data
 const data = {
-{
   "works": [
     {
       "title": "Étude in Musical Machinery",
