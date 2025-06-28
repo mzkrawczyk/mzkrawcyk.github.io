@@ -1,142 +1,107 @@
 // Application data
 const data = {
+{
   "works": [
-  {
-    "title": "Étude in Musical Machinery",
-    "year": 2025,
-    "category": "Orchestral & Large Ensemble",
-    "duration": "4′",
-    "premiere": "24 May 2025, KMH Stockholm; cond. Emil Eliasson",
-    "instrumentation": "Wind orchestra",
-    "score_link": "",
-    "soundfile": "https://soundcloud.com/mkrawczykcomposer/etude-in-musical-machinery-2025/s-vW4dQ98qrvS?si=77075243e9e74bf199d514c0bd4832b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-    "withdrawn": false,
-    "needs_contact": true
-  },
-  {
-    "title": "Bajki",
-    "year": 2025,
-    "category": "Orchestral & Large Ensemble",
-    "duration": "8′",
-    "premiere": "25 Apr 2025, KMH Stockholm; horn Hilda Melin; cond. Wolfgang Durán",
-    "instrumentation": "Horn & chamber ensemble",
-    "score_link": "https://www.svenskmusik.org/en/works/bajki-folk-tales-191818",
-    "soundfile": "https://soundcloud.com/mkrawczykcomposer/horn-concertino-bajki-2025/s-BGLqJpzH2KI?si=954bd41a73e64dcfa86cd14a6656f557&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-    "withdrawn": false
-  },
-  {
-    "title": "ANGELUS",
-    "year": 2024,
-    "category": "Orchestral & Large Ensemble",
-    "duration": "15′",
-    "premiere": "28 Feb 2025, KMH Stockholm; cond. Luca Gliozzi",
-    "instrumentation": "Symphony orchestra",
-    "score_link": "https://www.svenskmusik.org/en/works/n-g-e-l-v-s-angelus-191655",
-    "withdrawn": false
-  },
-  {
-    "title": "STARGAZING II",
-    "year": 2024,
-    "category": "Orchestral & Large Ensemble",
-    "duration": "18′",
-    "premiere": "TBA",
-    "instrumentation": "Solo trombone, percussion & strings",
-    "score_link": "https://www.svenskmusik.org/en/works/nachtmusik-186428",
-    "withdrawn": false
-  },
-  {
-    "title": "Threnody XV",
-    "year": 2024,
-    "category": "Orchestral & Large Ensemble",
-    "duration": "11′",
-    "premiere": "5 & 9 Apr 2024, Stockholm/Vällingby; cond. Martin Thorell, Teo Hillberg, Benedikt Kantert",
-    "instrumentation": "Mixed chamber ensemble",
-    "score_link": "https://www.svenskmusik.org/en/works/threnody-xv-189806",
-    "withdrawn": false
-  },
-  {
-    "title": "antiphon and chorale",
-    "year": 2023,
-    "category": "Orchestral & Large Ensemble",
-    "duration": "6′",
-    "premiere": "19 Jan 2024, KMH Stockholm; cond. Tom Poulson",
-    "instrumentation": "Brass ensemble",
-    "score_link": "https://www.svenskmusik.org/en/works/antiphon-and-chorale-187751",
-    "withdrawn": false
-  },
-  {
-    "title": "Pilgrimages",
-    "year": 2023,
-    "category": "Orchestral & Large Ensemble",
-    "duration": "13′",
-    "premiere": "2 Apr 2023, Culturum, Nyköping; Nyköpings Filharmoniker, cond. Simon Crawford-Phillips",
-    "instrumentation": "Sinfonietta",
-    "score_link": "https://www.svenskmusik.org/en/works/pilgrimages-overture-rhapsodyfor-sinfonietta-180360",
-    "withdrawn": true
-  },
-  {
-    "title": "THE RULES OF FORESTRY",
-    "year": 2022,
-    "category": "Orchestral & Large Ensemble",
-    "duration": "6′",
-    "premiere": "19 Nov 2022, Queen Silvia Concert Hall, Stockholm; cond. Mark Tatlow",
-    "instrumentation": "Chamber orchestra",
-    "score_link": "https://www.svenskmusik.org/en/works/the-rules-of-forestry-poem-for-chamber-orchestra-180550",
-    "withdrawn": false
-  },
-  {
-    "title": "Kalemegdan and the Danube",
-    "year": 2022,
-    "category": "Orchestral & Large Ensemble",
-    "duration": "10′",
-    "premiere": "8 May 2022, KMH, Stockholm; KMH Symphony Orchestra, cond. Hanna Ohlson Nordh",
-    "instrumentation": "Symphony orchestra",
-    "score_link": "",
-    "withdrawn": true
-  }
-
-    {"title":"ein traum…","year":2024,"category":"Chamber Music","duration":"5′","premiere":"4 Aug 2024, Ceplis, Latvia; Jānis Vītols, Vigovajk Sagvik & Anželika Levičeva","instrumentation":"Flute, cello, piano","score_link":"","withdrawn":false,"needs_contact":true},
-    {"title":"echoes from the tatras","year":2023,"category":"Chamber Music","duration":"14′","premiere":"28 Apr 2024, Hjortenbergskyrkan Nyköping; Söndagskvartetten","instrumentation":"String quartet","score_link":"https://www.svenskmusik.org/en/works/echoes-from-the-tatras-187746","withdrawn":false},
-    {"title":"STARGAZING I","year":2021,"category":"Chamber Music","duration":"10′","premiere":"12 Nov 2021, Folkets Hus, Årsta; Stockholm Saxophone Quartet","instrumentation":"Saxophone quartet","score_link":"https://www.svenskmusik.org/en/works/stargazing-i-179444","withdrawn":false},
-    {"title":"Wycinanki","year":2021,"category":"Chamber Music","duration":"6′","premiere":"12 Nov 2021, Folkets Hus, Årsta; Herman Pellbäck, Benjamin Gillis & Vigovajk Sagvik","instrumentation":"Clarinet, cello, piano","score_link":"https://www.svenskmusik.org/en/works/wycinanki-trio-for-cello-clarinet-and-piano-179450","withdrawn":false},
-    {"title":"Cogworks","year":2022,"category":"Chamber Music","duration":"5′","premiere":"12 Nov 2022, KMH, Stockholm; KMH Percussion Ensemble","instrumentation":"Percussion quartet","score_link":"","withdrawn":true},
-
-    {"title":"Duo Concertante","year":2025,"category":"Solo & Duo","duration":"8′","premiere":"28 May 2025, Edsberg Castle, Sollentuna; Anica Mićić & Gabriel Punsvik Gluch","instrumentation":"Flute & cello","score_link":"https://www.svenskmusik.org/en/works/duo-concertante-191817","withdrawn":false},
-    {"title":"...choć noc głęboka","year":2025,"category":"Solo & Duo","duration":"6′","premiere":"12 May 2025, KMH Stockholm; Jörgen Pettersson","instrumentation":"Solo alto saxophone","score_link":"https://www.svenskmusik.org/en/works/choc-noc-gleboka-though-the-night-is-vast-191816","withdrawn":false},
-    {"title":"Jesień","year":2022,"category":"Solo & Duo","duration":"8′","premiere":"11 Feb 2023, MUBA, Tallinn; Maria Tepp & Kadri-Ann Sumera","instrumentation":"Cello & piano","score_link":"https://www.svenskmusik.org/en/works/jesien-184377","withdrawn":false},
-    {"title":"the sleep of reason","year":2021,"category":"Solo & Duo","duration":"10′","premiere":"13 Nov 2021, KMH Stockholm; Ester Stålberg & Miłosz Krawczyk","instrumentation":"Violin & piano","score_link":"https://www.svenskmusik.org/en/works/the-sleep-of-reason-or-metamorphoses-179531","withdrawn":false},
-
-    {"title":"O, przyjdź do mnie","year":2023,"category":"Choral & Vocal","duration":"4′","premiere":"17 Nov 2023, Queen Silvia Concert Hall, Stockholm; En Kör","instrumentation":"SATB choir","score_link":"https://www.svenskmusik.org/en/works/o-przyjdz-do-mnie-187090","withdrawn":false},
-    {"title":"in the waters of purity","year":2022,"category":"Choral & Vocal","duration":"6′","premiere":"11 Feb 2023, MUBA, Tallinn; Iris Oja & Kadri-Ann Sumera","instrumentation":"Soprano & piano","score_link":"https://www.svenskmusik.org/en/works/in-the-waters-of-purity-184307","withdrawn":false},
-    {"title":"Himlen har landat","year":2020,"category":"Choral & Vocal","duration":"4′","premiere":"24 Dec 2020, S:t Nicolai, Nyköping; En Kör, dir. Anna-Lena Engström","instrumentation":"SATB & organ","score_link":"","withdrawn":true}
+    {
+      "title": "Étude in Musical Machinery",
+      "year": 2025,
+      "category": "Orchestral & Large Ensemble",
+      "duration": "4′",
+      "premiere": "24 May 2025, KMH Stockholm; cond. Emil Eliasson",
+      "instrumentation": "Wind orchestra",
+      "score_link": "",
+      "withdrawn": false,
+      "needs_contact": true
+    },
+    {
+      "title": "Bajki",
+      "year": 2025,
+      "category": "Orchestral & Large Ensemble",
+      "duration": "8′",
+      "premiere": "25 Apr 2025, KMH Stockholm; horn Hilda Melin; cond. Wolfgang Durán",
+      "instrumentation": "Horn & chamber ensemble",
+      "score_link": "https://www.svenskmusik.org/en/works/bajki-folk-tales-191818",
+      "withdrawn": false
+    },
+    {
+      "title": "ANGELUS",
+      "year": 2024,
+      "category": "Orchestral & Large Ensemble",
+      "duration": "15′",
+      "premiere": "28 Feb 2025, KMH Stockholm; cond. Luca Gliozzi",
+      "instrumentation": "Symphony orchestra",
+      "score_link": "https://www.svenskmusik.org/en/works/n-g-e-l-v-s-angelus-191655",
+      "withdrawn": false
+    },
+    {
+      "title": "STARGAZING II",
+      "year": 2024,
+      "category": "Orchestral & Large Ensemble",
+      "duration": "18′",
+      "premiere": "TBA",
+      "instrumentation": "Solo trombone, percussion & strings",
+      "score_link": "https://www.svenskmusik.org/en/works/nachtmusik-186428",
+      "withdrawn": false
+    },
+    {
+      "title": "Threnody XV",
+      "year": 2024,
+      "category": "Orchestral & Large Ensemble",
+      "duration": "11′",
+      "premiere": "5 & 9 Apr 2024, Stockholm/Vällingby; cond. Martin Thorell, Teo Hillberg, Benedikt Kantert",
+      "instrumentation": "Mixed chamber ensemble",
+      "score_link": "https://www.svenskmusik.org/en/works/threnody-xv-189806",
+      "withdrawn": false
+    },
+    {
+      "title": "antiphon and chorale",
+      "year": 2023,
+      "category": "Orchestral & Large Ensemble",
+      "duration": "6′",
+      "premiere": "19 Jan 2024, KMH Stockholm; cond. Tom Poulson",
+      "instrumentation": "Brass ensemble",
+      "score_link": "https://www.svenskmusik.org/en/works/antiphon-and-chorale-187751",
+      "withdrawn": false
+    },
+    {
+      "title": "Pilgrimages",
+      "year": 2023,
+      "category": "Orchestral & Large Ensemble",
+      "duration": "13′",
+      "premiere": "2 Apr 2023, Culturum, Nyköping; Nyköpings Filharmoniker, cond. Simon Crawford-Phillips",
+      "instrumentation": "Sinfonietta",
+      "score_link": "https://www.svenskmusik.org/en/works/pilgrimages-overture-rhapsodyfor-sinfonietta-180360",
+      "withdrawn": true
+    },
+    {
+      "title": "THE RULES OF FORESTRY",
+      "year": 2022,
+      "category": "Orchestral & Large Ensemble",
+      "duration": "6′",
+      "premiere": "19 Nov 2022, Queen Silvia Concert Hall, Stockholm; cond. Mark Tatlow",
+      "instrumentation": "Chamber orchestra",
+      "score_link": "https://www.svenskmusik.org/en/works/the-rules-of-forestry-poem-for-chamber-orchestra-180550",
+      "withdrawn": false
+    },
+    {
+      "title": "Kalemegdan and the Danube",
+      "year": 2022,
+      "category": "Orchestral & Large Ensemble",
+      "duration": "10′",
+      "premiere": "8 May 2022, KMH, Stockholm; KMH Symphony Orchestra, cond. Hanna Ohlson Nordh",
+      "instrumentation": "Symphony orchestra",
+      "score_link": "",
+      "withdrawn": true
+    }
   ],
   "recordings": {
-    "soundcloud":"https://soundcloud.com/mkrawczykcomposer",
-    "youtube":"https://www.youtube.com/@mkrawczykcomposer/videos",
-    "STARGAZING I":"https://soundcloud.com/mkrawczykcomposer/stargazing-i-2021",
-    "Wycinanki":"https://soundcloud.com/mkrawczykcomposer/wycinanki-2021",
-    "Kalemegdan and the Danube":"https://soundcloud.com/mkrawczykcomposer/kalemegdan-and-the-danube-2022",
-    "the sleep of reason":"https://soundcloud.com/mkrawczykcomposer/the-sleep-of-reason",
-    "THE RULES OF FORESTRY":"https://soundcloud.com/mkrawczykcomposer/the-rules-of-forestry-2022",
-    "Jesień":"https://soundcloud.com/mkrawczykcomposer/jesien",
-    "in the waters of purity":"https://soundcloud.com/mkrawczykcomposer/in-the-waters-of-purity-2022",
-    "O, przyjdź do mnie":"https://soundcloud.com/mkrawczykcomposer/o-przyjdz-do-mnie-2023",
-    "antiphon and chorale":"https://soundcloud.com/mkrawczykcomposer/antiphon-and-chorale-2024",
-    "echoes from the tatras":"https://soundcloud.com/mkrawczykcomposer/string-quartet-echoes-from-the-tatras-2023/s-MoydMzfaJc3",
-    "Threnody XV":"https://soundcloud.com/mkrawczykcomposer/threnody-xv-2024",
-    "ANGELUS":"https://soundcloud.com/mkrawczykcomposer/angelus-2024"
-  },
-  "upcoming":[
-    {"title":"Clarinet Quintet","premiere":"4 Sep 2025, Berwaldhallen","description":"Waves Arts Lab commission","link":"https://www.berwaldhallen.se/konsert/waves-arts-lab-med-voksenasen"},
-    {"title":"l'amor che move il sole…","premiere":"TBA","description":"New orchestral work","link":""}
-  ],
-  "bios":{
-    "short":"Miłosz Krawczyk (b. 2004) is a Swedish-Polish composer inspired by sacred traditions, folk idioms, and Eastern-European modernism, based in Stockholm.",
-    "medium":"Miłosz Krawczyk (b. 2004) is a Swedish-Polish composer whose music is shaped by sacred traditions, folk idioms, and the expressive intensity of Eastern European modernism. He began his musical journey in Nyköping before studying composition, piano, and conducting at Lilla Akademien in Stockholm. There, he was mentored by Matthew Peterson, Daniel Nelson, Martin Sturfält, and Mika Eichenholz, and also received private instruction from Professor Krzysztof Grzeszczak in Łódź, Poland. He is currently pursuing a bachelor's degree in composition at the Royal College of Music in Stockholm (KMH), where he studies under Djuro Živković. A key mentor in his artistic development has also been conductor Christian Karlsen. At just 17, Krawczyk made his orchestral debut at KMH with his first symphonic work. The following year, he was commissioned by the Nyköping Philharmonic Society to write an orchestral overture, a piece that garnered considerable media attention. Since then, his music has been performed across Sweden and the Baltics by leading ensembles and soloists, including the Stockholm Saxophone Quartet, the Stockholm Wind Symphony, and the choir En Kör. In February 2025, his large-scale orchestral work Angelus premiered to great acclaim.",
-    "long":"Miłosz Krawczyk (b. 2004) is a Swedish-Polish composer whose music is shaped by sacred traditions, folk idioms, and the expressive intensity of Eastern European modernism. He began his musical journey in Nyköping before studying composition, piano, and conducting at Lilla Akademien in Stockholm. There, he was mentored by Matthew Peterson, Daniel Nelson, Martin Sturfält, and Mika Eichenholz, and also received private instruction from Professor Krzysztof Grzeszczak in Łódź, Poland. He is currently pursuing a bachelor's degree in composition at the Royal College of Music in Stockholm (KMH), where he studies under Djuro Živković. A key mentor in his artistic development has also been conductor Christian Karlsen. At just 17, Krawczyk made his orchestral debut at KMH with his first symphonic work. The following year, he was commissioned by the Nyköping Philharmonic Society to write an orchestral overture, a piece that garnered considerable media attention. Since then, his music has been performed across Sweden and the Baltics by leading ensembles and soloists, including the Stockholm Saxophone Quartet, the Stockholm Wind Symphony, and the choir En Kör. In February 2025, his large-scale orchestral work Angelus premiered to great acclaim. Krawczyk has been awarded scholarships from prestigious institutions such as the Royal Swedish Academy of Music, the Bifrost Order, O/Modernt, and the Karin and Einar Blomsjö Foundation. In 2024, he was selected for a residency program at the Bogliasco Foundation in Italy. In addition to composing, he is active as an arranger, pianist, and conductor. His arrangements have been commissioned by and performed at major venues, including the Stockholm Concert Hall. Known for his eloquence and passion for music history, he has also been invited to lecture on the subject, receiving praise for his engaging and insightful presentations. Beyond music, Krawczyk enjoys poetry and literature, exploring nature on long cycling trips, and playing electric bass in a rock band with friends."
-  },
-  "email": "mkrawczykcomposer [at] hotmail [dot] com",
-  "awards": ["Voksenåsen Music Academies, composer talent (2025)","Susanne Hobohms Stiftelse Recipient (2025)","Karin och Einar Blomsjö music scholarship (2024)","Nils Mörner scholarship (2023)","Royal Swedish Academy of Music scholarship (2023)","Bifrostorden – Bifrostpriset scholarship (2022) – two-time recipient","O/Modernt / Arvo Pärt Centre scholarship and educational trip (2021/2022) – two-time recipient","Sten Davidsson's Foundation scholarship (2020/2021) – two-time recipient","Nyköping Rotary Club scholarship (2020)","Nyköping Sports Association – Young Culture Profile of the Year (2019)"]
+    "soundcloud": "https://soundcloud.com/mkrawczykcomposer",
+    "youtube": "https://www.youtube.com/@mkrawczykcomposer/videos",
+    "STARGAZING I": "https://soundcloud.com/mkrawczykcomposer/stargazing-i-2021",
+    "Wycinanki": "https://soundcloud.com/mkrawczykcomposer/wycinanki-2021",
+    "Étude in Musical Machinery": "https://soundcloud.com/mkrawczykcomposer/etude-in-musical-machinery-2025/s-vW4dQ98qrvS?si=77075243e9e74bf199d514c0bd4832b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "Bajki": "https://soundcloud.com/mkrawczykcomposer/horn-concertino-bajki-2025/s-BGLqJpzH2KI?si=954bd41a73e64dcfa86cd14a6656f557&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+  }
 };
 
 // Application state
