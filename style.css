@@ -1440,7 +1440,7 @@ select.form-control {
 .about-me-section {
   padding: var(--space-32) 0;
   border-bottom: 1px solid var(--color-border);
-  margin-bottom: var(--space-32);
+  margin-bottom: var(--space-16);
 }
 
 .about-me-content {
