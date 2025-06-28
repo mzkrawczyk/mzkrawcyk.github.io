@@ -45,7 +45,7 @@ const data = {
 "Bajki": "https://soundcloud.com/mkrawczykcomposer/horn-concertino-bajki-2025/s-BGLqJpzH2KI?si=954bd41a73e64dcfa86cd14a6656f557&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
   },
   "upcoming":[
-    {"title":"Clarinet Quintet","premiere":"4 Sep 2025, Berwaldhallen","description":"Waves Arts Lab commission","link":"https://www.berwaldhallen.se/konsert/waves-arts-lab-med-voksenasen"},
+    {"title":"Clarinet Quintet","premiere":"4 Sep 2025, Finlandsinstitutet, Stockholm","description":"Waves Arts Lab","link":"https://www.berwaldhallen.se/konsert/waves-arts-lab-med-voksenasen"},
     {"title":"l'amor che move il sole…","premiere":"TBA","description":"New orchestral work","link":""}
   ],
    "bios": {
