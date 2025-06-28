@@ -1062,7 +1062,7 @@ select.form-control {
   background-repeat: no-repeat;
   background-position: right var(--space-12) center;
   background-size: 16px;
-  padding-right: var(--space-32);
+  padding-right: var(--space-16);
 }
 
 /* Add a dark mode specific caret */
