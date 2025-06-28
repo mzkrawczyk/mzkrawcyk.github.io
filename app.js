@@ -1,15 +1,101 @@
 // Application data
 const data = {
   "works": [
-    {"title":"Étude in Musical Machinery","year":2025,"category":"Orchestral & Large Ensemble","duration":"4′","premiere":"24 May 2025, KMH Stockholm; cond. Emil Eliasson","instrumentation":"Wind orchestra","score_link":"","withdrawn":false,"needs_contact":true},
-    {"title":"Bajki","year":2025,"category":"Orchestral & Large Ensemble","duration":"8′","premiere":"25 Apr 2025, KMH Stockholm; horn Hilda Melin; cond. Wolfgang Durán","instrumentation":"Horn & chamber ensemble","score_link":"https://www.svenskmusik.org/en/works/bajki-folk-tales-191818","withdrawn":false},
-    {"title":"ANGELUS","year":2024,"category":"Orchestral & Large Ensemble","duration":"15′","premiere":"28 Feb 2025, KMH Stockholm; cond. Luca Gliozzi","instrumentation":"Symphony orchestra","score_link":"https://www.svenskmusik.org/en/works/n-g-e-l-v-s-angelus-191655","withdrawn":false},
-    {"title":"STARGAZING II","year":2024,"category":"Orchestral & Large Ensemble","duration":"18′","premiere":"TBA","instrumentation":"Solo trombone, percussion & strings","score_link":"https://www.svenskmusik.org/en/works/nachtmusik-186428","withdrawn":false},
-    {"title":"Threnody XV","year":2024,"category":"Orchestral & Large Ensemble","duration":"11′","premiere":"5 & 9 Apr 2024, Stockholm/Vällingby; cond. Martin Thorell, Teo Hillberg, Benedikt Kantert","instrumentation":"Mixed chamber ensemble","score_link":"https://www.svenskmusik.org/en/works/threnody-xv-189806","withdrawn":false},
-    {"title":"antiphon and chorale","year":2023,"category":"Orchestral & Large Ensemble","duration":"6′","premiere":"19 Jan 2024, KMH Stockholm; cond. Tom Poulson","instrumentation":"Brass ensemble","score_link":"https://www.svenskmusik.org/en/works/antiphon-and-chorale-187751","withdrawn":false},
-    {"title":"Pilgrimages","year":2023,"category":"Orchestral & Large Ensemble","duration":"13′","premiere":"2 Apr 2023, Culturum, Nyköping; Nyköpings Filharmoniker, cond. Simon Crawford-Phillips","instrumentation":"Sinfonietta","score_link":"https://www.svenskmusik.org/en/works/pilgrimages-overture-rhapsodyfor-sinfonietta-180360","withdrawn":true},
-    {"title":"THE RULES OF FORESTRY","year":2022,"category":"Orchestral & Large Ensemble","duration":"6′","premiere":"19 Nov 2022, Queen Silvia Concert Hall, Stockholm; cond. Mark Tatlow","instrumentation":"Chamber orchestra","score_link":"https://www.svenskmusik.org/en/works/the-rules-of-forestry-poem-for-chamber-orchestra-180550","withdrawn":false},
-    {"title":"Kalemegdan and the Danube","year":2022,"category":"Orchestral & Large Ensemble","duration":"10′","premiere":"8 May 2022, KMH, Stockholm; KMH Symphony Orchestra, cond. Daniel Hansson","instrumentation":"Symphony orchestra","score_link":"","withdrawn":true},
+    [
+  {
+    "title": "Étude in Musical Machinery",
+    "year": 2025,
+    "category": "Orchestral & Large Ensemble",
+    "duration": "4′",
+    "premiere": "24 May 2025, KMH Stockholm; cond. Emil Eliasson",
+    "instrumentation": "Wind orchestra",
+    "score_link": "",
+    "soundfile": "https://soundcloud.com/mkrawczykcomposer/etude-in-musical-machinery-2025/s-vW4dQ98qrvS?si=77075243e9e74bf199d514c0bd4832b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "withdrawn": false,
+    "needs_contact": true
+  },
+  {
+    "title": "Bajki",
+    "year": 2025,
+    "category": "Orchestral & Large Ensemble",
+    "duration": "8′",
+    "premiere": "25 Apr 2025, KMH Stockholm; horn Hilda Melin; cond. Wolfgang Durán",
+    "instrumentation": "Horn & chamber ensemble",
+    "score_link": "https://www.svenskmusik.org/en/works/bajki-folk-tales-191818",
+    "soundfile": "https://soundcloud.com/mkrawczykcomposer/horn-concertino-bajki-2025/s-BGLqJpzH2KI?si=954bd41a73e64dcfa86cd14a6656f557&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "withdrawn": false
+  },
+  {
+    "title": "ANGELUS",
+    "year": 2024,
+    "category": "Orchestral & Large Ensemble",
+    "duration": "15′",
+    "premiere": "28 Feb 2025, KMH Stockholm; cond. Luca Gliozzi",
+    "instrumentation": "Symphony orchestra",
+    "score_link": "https://www.svenskmusik.org/en/works/n-g-e-l-v-s-angelus-191655",
+    "withdrawn": false
+  },
+  {
+    "title": "STARGAZING II",
+    "year": 2024,
+    "category": "Orchestral & Large Ensemble",
+    "duration": "18′",
+    "premiere": "TBA",
+    "instrumentation": "Solo trombone, percussion & strings",
+    "score_link": "https://www.svenskmusik.org/en/works/nachtmusik-186428",
+    "withdrawn": false
+  },
+  {
+    "title": "Threnody XV",
+    "year": 2024,
+    "category": "Orchestral & Large Ensemble",
+    "duration": "11′",
+    "premiere": "5 & 9 Apr 2024, Stockholm/Vällingby; cond. Martin Thorell, Teo Hillberg, Benedikt Kantert",
+    "instrumentation": "Mixed chamber ensemble",
+    "score_link": "https://www.svenskmusik.org/en/works/threnody-xv-189806",
+    "withdrawn": false
+  },
+  {
+    "title": "antiphon and chorale",
+    "year": 2023,
+    "category": "Orchestral & Large Ensemble",
+    "duration": "6′",
+    "premiere": "19 Jan 2024, KMH Stockholm; cond. Tom Poulson",
+    "instrumentation": "Brass ensemble",
+    "score_link": "https://www.svenskmusik.org/en/works/antiphon-and-chorale-187751",
+    "withdrawn": false
+  },
+  {
+    "title": "Pilgrimages",
+    "year": 2023,
+    "category": "Orchestral & Large Ensemble",
+    "duration": "13′",
+    "premiere": "2 Apr 2023, Culturum, Nyköping; Nyköpings Filharmoniker, cond. Simon Crawford-Phillips",
+    "instrumentation": "Sinfonietta",
+    "score_link": "https://www.svenskmusik.org/en/works/pilgrimages-overture-rhapsodyfor-sinfonietta-180360",
+    "withdrawn": true
+  },
+  {
+    "title": "THE RULES OF FORESTRY",
+    "year": 2022,
+    "category": "Orchestral & Large Ensemble",
+    "duration": "6′",
+    "premiere": "19 Nov 2022, Queen Silvia Concert Hall, Stockholm; cond. Mark Tatlow",
+    "instrumentation": "Chamber orchestra",
+    "score_link": "https://www.svenskmusik.org/en/works/the-rules-of-forestry-poem-for-chamber-orchestra-180550",
+    "withdrawn": false
+  },
+  {
+    "title": "Kalemegdan and the Danube",
+    "year": 2022,
+    "category": "Orchestral & Large Ensemble",
+    "duration": "10′",
+    "premiere": "8 May 2022, KMH, Stockholm; KMH Symphony Orchestra, cond. Hanna Ohlson Nordh",
+    "instrumentation": "Symphony orchestra",
+    "score_link": "",
+    "withdrawn": true
+  }
+]
 
     {"title":"ein traum…","year":2024,"category":"Chamber Music","duration":"5′","premiere":"4 Aug 2024, Ceplis, Latvia; Jānis Vītols, Vigovajk Sagvik & Anželika Levičeva","instrumentation":"Flute, cello, piano","score_link":"","withdrawn":false,"needs_contact":true},
     {"title":"echoes from the tatras","year":2023,"category":"Chamber Music","duration":"14′","premiere":"28 Apr 2024, Hjortenbergskyrkan Nyköping; Söndagskvartetten","instrumentation":"String quartet","score_link":"https://www.svenskmusik.org/en/works/echoes-from-the-tatras-187746","withdrawn":false},
