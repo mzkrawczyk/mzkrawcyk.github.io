@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miłosz Krawczyk – Composer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container navbar-content">
+            <div class="navbar-brand">
+                <span class="logo">MK</span>
+            </div>
+            <ul class="navbar-nav" role="menubar">
+                <li role="none"><a href="#/" role="menuitem">Home</a></li>
+                <li role="none"><a href="#/works" role="menuitem">Works</a></li>
+                <li role="none"><a href="#/media" role="menuitem">Media</a></li>
+                <li role="none"><a href="#/bio" role="menuitem">Bio</a></li>
+                <li role="none"><a href="#/contact" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Home View -->
+        <section id="home" class="view active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Miłosz Krawczyk – Composer</h1>
+                    <p class="hero-subtitle">Modernist, ritual, and folk resonance</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <!-- About Me Section -->
+                <section class="about-me-section" id="about-me">
+                    <div class="about-me-content">
+                        <div class="about-me-photo">
+                            <img src="photo-square.jpg" alt="Miłosz Krawczyk portrait" class="about-photo"/>
+                        </div>
+                        <div class="about-me-text">
+                            <p>Miłosz Krawczyk composes concert music shaped by sacred traditions, folk idioms, and modernist energy. Based in Stockholm, active across Scandinavia and the Baltics.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Upcoming Projects Section -->
+                <section class="upcoming-section">
+                    <h2>Upcoming Projects</h2>
+                    <div id="upcoming-container" class="upcoming-grid"></div>
+                </section>
+
+                <!-- Angelus Video -->
+                <section class="featured-video">
+                    <h2>Featured: ANGELUS</h2>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Wzu14K46W-8?rel=0" title="ANGELUS by Miłosz Krawczyk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </section>
+                
+                <!-- Quick Navigation -->
+                <div class="quick-nav">
+                    <div class="card quick-nav-card" role="button" tabindex="0" data-href="#/works">
+                        <div class="card__body">
+                            <h3>Works</h3>
+                            <p>Explore my complete catalogue of compositions</p>
+                        </div>
+                    </div>
+                    <div class="card quick-nav-card" role="button" tabindex="0" data-href="#/media">
+                        <div class="card__body">
+                            <h3>Media</h3>
+                            <p>Listen to recordings and performances</p>
+                        </div>
+                    </div>
+                    <div class="card quick-nav-card" role="button" tabindex="0" data-href="#/contact">
+                        <div class="card__body">
+                            <h3>Contact</h3>
+                            <p>Get in touch for collaborations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works View -->
+        <section id="works" class="view">
+            <div class="container">
+                <header class="page-header">
+                    <h1>Works</h1>
+                    <div class="search-container">
+                        <input type="search" class="form-control search-input" placeholder="Search works..." aria-label="Search works by title" id="search-works">
+                    </div>
+                </header>
+                <div id="works-container" class="works-container"></div>
+            </div>
+        </section>
+
+        <!-- Media View -->
+        <section id="media" class="view">
+            <div class="container">
+                <header class="page-header">
+                    <h1>Media</h1>
+                    <p>Listen to my works through these platforms:</p>
+                </header>
+                <div class="media-links">
+                    <a href="" id="soundcloud-link" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">Listen on SoundCloud</a>
+                    <a href="" id="youtube-link" class="btn btn--secondary btn--lg" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bio View -->
+        <section id="bio" class="view">
+            <div class="container">
+                <header class="page-header">
+                    <h1>Biography</h1>
+                </header>
+                <div class="bio-content">
+                    <div class="bio-header">
+                        <div class="bio-text-section">
+                            <div class="bio-tabs">
+                                <button class="bio-tab" data-bio="very_short">Very Short</button>
+                                <button class="bio-tab" data-bio="short">Short</button>
+                                <button class="bio-tab active" data-bio="medium">Medium</button>
+                                <button class="bio-tab" data-bio="long">Long</button>
+                            </div>
+                            <div class="bio-text" id="bio-paragraph"></div>
+                        </div>
+                    </div>
+                    <div class="awards-section">
+                        <h3>Recognition & Awards</h3>
+                        <ul id="awards-list" class="awards-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact View -->
+        <section id="contact" class="view">
+            <div class="container">
+                <header class="page-header">
+                    <h1>Contact</h1>
+                </header>
+                <div class="contact-content">
+                    <p>I welcome opportunities for collaboration, commissions, and performances.</p>
+                    <div class="contact-details">
+                        <div class="email-section">
+                            <h3>Email</h3>
+                            <div class="email-display-container">
+                                <span id="email-display" class="email-text"></span>
+                                <button id="copy-email" class="btn btn--secondary btn--sm copy-btn">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <p>Follow my work:</p>
+                        <div class="social-icons">
+                            <a href="" id="social-soundcloud" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud">SoundCloud</a>
+                            <a href="" id="social-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
