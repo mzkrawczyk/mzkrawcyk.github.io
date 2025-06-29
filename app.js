@@ -233,37 +233,44 @@ function generateWorkButtons(work) {
 }
 
 function renderBio() {
-    const main = document.querySelector('.main-content');
-    main.innerHTML = `
-        <div class="view">
-            <div class="container">
-                <div class="bio-layout">
-                    <div class="portrait-section">
-                        <div class="portrait"></div>
-                        <p class="photo-credit">Photo: Birgit Püve / Arvo Pärt Centre</p>
-                    </div>
-                    <div class="bio-content-section">
-                        <div class="tabs">
-                            <button class="tab-btn active" onclick="showBio('short')">Short</button>
-                            <button class="tab-btn" onclick="showBio('medium')">Medium</button>
-                            <button class="tab-btn" onclick="showBio('long')">Long</button>
-                        </div>
-                        
-                        <div id="bio-content">
-                            ${formatBio(siteData.bios[currentLang].short)}
-                        </div>
-                    </div>
-                </div>
-                
-                <h2 class="mb-16">Awards</h2>
-                <div class="awards-masonry">
-                    ${siteData.awards.map(award => `
-                        <div class="award-item">${award}</div>
-                    `).join('')}
-                </div>
-            </div>
+  const main = document.querySelector('.main-content');
+  main.innerHTML = `
+    <div class="container">
+      <div class="bio-layout">
+        <div class="portrait-section">
+          <div class="portrait"></div>
+          <div class="photo-credit">Photo: Birgit Püve / Arvo Pärt Centre</div>
         </div>
-    `;
+        <div class="bio-content">
+          <!-- Add language switcher here -->
+          <div class="bio-controls">
+            <div class="language-switcher">
+              <button class="lang-btn ${currentLang === 'EN' ? 'active' : ''}" data-lang="EN">EN</button>
+              <button class="lang-btn ${currentLang === 'SV' ? 'active' : ''}" data-lang="SV">SV</button>
+              <button class="lang-btn ${currentLang === 'PL' ? 'active' : ''}" data-lang="PL">PL</button>
+            </div>
+            <div class="tabs">
+              <button class="tab-btn active" onclick="showBio('short')">Short</button>
+              <button class="tab-btn" onclick="showBio('medium')">Medium</button>
+              <button class="tab-btn" onclick="showBio('long')">Long</button>
+            </div>
+          </div>
+          <div class="bio-text">
+            ${siteData.bios[currentLang]?.short || 'Bio content not available'}
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  // Re-attach event listeners for the language buttons
+  setupLanguageListeners();
+}
+
+function setupLanguageListeners() {
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+  });
 }
 
 function renderContact() {
