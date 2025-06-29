@@ -978,7 +978,7 @@ pre code {
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: url('./assets/sheet.jpg') center/cover;
+  background: url('./sheet.jpg') center/cover;
   background-color: var(--color-lavender);
   color: white;
   padding: var(--space-32) var(--space-16);
@@ -1283,7 +1283,7 @@ pre code {
 .portrait {
   width: 200px;
   height: 200px;
-  background: url('./assets/photo-square.jpg') center/cover;
+  background: url('./photo-square.jpg') center/cover;
   background-color: var(--color-secondary);
   border-radius: var(--radius-lg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
