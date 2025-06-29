@@ -678,11 +678,11 @@ select.form-control {
   --color-select-caret: rgba(19, 52, 59, 0.8);
 
   /* Purple theme colors */
-  --color-lavender: #a569d1;
+  --color-lavender: #942fdf;
   --color-lavender-hover: #944fbe;
   --color-lavender-dark: #6b3e9a;
   --color-grey-disabled: #cccccc;
-  --hero-overlay: rgba(133, 92, 193, 0.45);
+  --hero-overlay: rgba(133, 92, 193, 0.6);
 
   /* Common style patterns */
   --focus-ring: 0 0 0 3px var(--color-focus-ring);
