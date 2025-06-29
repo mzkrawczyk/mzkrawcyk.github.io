@@ -337,32 +337,107 @@ function createWorkCard(work) {
   const meta = document.createElement('div');
   meta.className = 'work-meta';
 
+  // Year chip
+  const yearChip = document.createElement('span');
+  yearChip.className = 'meta-chip';
+  yearChip.textContent = work.year;
+  meta.appendChild(yearChip);
+  
+  // Instrumentation chip
+  if (work.instrumentation) {
+    const instrumentationChip = document.createElement('span');
+    instrumentationChip.className = 'meta-chip instrumentation-chip';
+    instrumentationChip.textContent = work.instrumentation;
+    meta.appendChild(instrumentationChip);
+  }
+  
+  // Duration chip
+  const durationChip = document.createElement('span');
+  durationChip.className = 'meta-chip';
+  durationChip.textContent = work.duration;
+  meta.appendChild(durationChip);
+  
+  cardBody.appendChild(meta);
+  
+  // Description and toggle button
   if (work.description) {
-  // Create description paragraph, hidden by default
-  const descPara = document.createElement('p');
-  descPara.className = 'work-description hidden'; // hidden class hides it initially
-  descPara.textContent = work.description;
-  cardBody.appendChild(descPara);
+    // Create description paragraph, hidden by default
+    const descPara = document.createElement('p');
+    descPara.className = 'work-description hidden';
+    descPara.textContent = work.description;
+    cardBody.appendChild(descPara);
 
-  // Create toggle button
-  const toggleBtn = document.createElement('button');
-  toggleBtn.className = 'btn btn--outline btn--sm work-desc-toggle';
-  toggleBtn.textContent = 'Show More';
+    // Create toggle button
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'btn btn--outline btn--sm work-desc-toggle';
+    toggleBtn.textContent = 'Show More';
 
-  toggleBtn.addEventListener('click', () => {
-    const isHidden = descPara.classList.contains('hidden');
-    if (isHidden) {
-      descPara.classList.remove('hidden');
-      toggleBtn.textContent = 'Show Less';
-    } else {
-      descPara.classList.add('hidden');
-      toggleBtn.textContent = 'Show More';
-    }
-  });
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = descPara.classList.contains('hidden');
+      if (isHidden) {
+        descPara.classList.remove('hidden');
+        toggleBtn.textContent = 'Show Less';
+      } else {
+        descPara.classList.add('hidden');
+        toggleBtn.textContent = 'Show More';
+      }
+    });
 
-  cardBody.appendChild(toggleBtn);
-}
-
+    cardBody.appendChild(toggleBtn);
+  }
+  
+  // Premiere info
+  const premiere = document.createElement('div');
+  premiere.className = 'work-premiere';
+  premiere.textContent = work.premiere;
+  cardBody.appendChild(premiere);
+  
+  // Button container
+  const buttonContainer = document.createElement('div');
+  buttonContainer.className = 'work-buttons';
+  
+  // Score/Contact button logic
+  if (work.needs_contact) {
+    // Contact composer for score
+    const contactBtn = document.createElement('a');
+    const emailAddress = data.email.replace(' [at] ', '@').replace(' [dot] ', '.');
+    contactBtn.href = `mailto:${emailAddress}?subject=Score Request: ${work.title}`;
+    contactBtn.textContent = 'Contact Composer for Score';
+    contactBtn.className = 'btn btn--primary score-button';
+    buttonContainer.appendChild(contactBtn);
+  } else if (work.withdrawn) {
+    // Not for performance button
+    const notPerformanceBtn = document.createElement('button');
+    notPerformanceBtn.textContent = 'Not for Performance';
+    notPerformanceBtn.className = 'btn btn--outline btn--disabled';
+    notPerformanceBtn.disabled = true;
+    buttonContainer.appendChild(notPerformanceBtn);
+  } else if (work.score_link) {
+    // View score button
+    const scoreBtn = document.createElement('a');
+    scoreBtn.href = work.score_link;
+    scoreBtn.textContent = 'View Score';
+    scoreBtn.className = 'btn btn--primary score-button';
+    scoreBtn.target = '_blank';
+    scoreBtn.rel = 'noopener noreferrer';
+    buttonContainer.appendChild(scoreBtn);
+  }
+  
+  // Listen button if recording exists
+  if (data.recordings[work.title]) {
+    const listenBtn = document.createElement('a');
+    listenBtn.href = data.recordings[work.title];
+    listenBtn.textContent = 'Listen';
+    listenBtn.className = 'btn btn--secondary listen-button';
+    listenBtn.target = '_blank';
+    listenBtn.rel = 'noopener noreferrer';
+    buttonContainer.appendChild(listenBtn);
+  }
+  
+  cardBody.appendChild(buttonContainer);
+  card.appendChild(cardBody);
+  
+  return card;
 }
   
   // Year chip
