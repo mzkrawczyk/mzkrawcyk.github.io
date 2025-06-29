@@ -189,11 +189,14 @@ function renderWorks() {
                                                     <p>${work.workInfo || 'No additional information available.'}</p>
                                                 </div>
                                                 <div class="card-actions">
-                                                    ${generateWorkButtons(work)}
-                                                    <button class="btn btn--secondary btn--sm" onclick="toggleMoreInfo(this)">
-                                                        More Info <span class="chevron">▼</span>
-                                                    </button>
-                                                </div>
+  <!-- other buttons -->
+  <button class="btn btn--secondary btn--sm" onclick="toggleMoreInfo(this)">
+    More Info <span class="chevron">▼</span>
+  </button>
+</div>
+<div class="more-info hidden">
+  <p>More info text here...</p>
+</div>
                                             </div>
                                         `).join('')}
                                     </div>
