@@ -2,7 +2,7 @@
 const data = {
   "works": [
     {"title":"Étude in Musical Machinery","year":2025,"category":"Orchestral & Large Ensemble","duration":"4′","premiere":"24 May 2025, KMH Stockholm; cond. Emil Eliasson","instrumentation":"Wind orchestra","score_link":"","withdrawn":false,"needs_contact":true},
-    {"title":"Bajki","year":2025,"category":"Orchestral & Large Ensemble","duration":"8′","premiere":"25 Apr 2025, KMH Stockholm; horn Hilda Melin; cond. Wolfgang Durán","instrumentation":"Horn & chamber ensemble","score_link":"https://www.svenskmusik.org/en/works/bajki-folk-tales-191818","withdrawn":false,"description": "A dynamic orchestral study exploring mechanical rhythms and textures."},
+    {"title":"Bajki","year":2025,"category":"Orchestral & Large Ensemble","duration":"8′","premiere":"25 Apr 2025, KMH Stockholm; horn Hilda Melin; cond. Wolfgang Durán","instrumentation":"Horn & chamber ensemble","score_link":"https://www.svenskmusik.org/en/works/bajki-folk-tales-191818","withdrawn":false},
     {"title":"ANGELUS","year":2024,"category":"Orchestral & Large Ensemble","duration":"15′","premiere":"28 Feb 2025, KMH Stockholm; cond. Luca Gliozzi","instrumentation":"Symphony orchestra","score_link":"https://www.svenskmusik.org/en/works/n-g-e-l-v-s-angelus-191655","withdrawn":false},
     {"title":"STARGAZING II","year":2024,"category":"Orchestral & Large Ensemble","duration":"18′","premiere":"TBA","instrumentation":"Solo trombone & strings","score_link":"https://www.svenskmusik.org/en/works/nachtmusik-186428","withdrawn":false},
     {"title":"Threnody XV","year":2024,"category":"Orchestral & Large Ensemble","duration":"11′","premiere":"5 & 9 Apr 2024, Stockholm/Vällingby; cond. Martin Thorell, Teo Hillberg, Benedikt Kantert","instrumentation":"Mixed chamber ensemble","score_link":"https://www.svenskmusik.org/en/works/threnody-xv-189806","withdrawn":false},
@@ -337,11 +337,6 @@ function createWorkCard(work) {
   const meta = document.createElement('div');
   meta.className = 'work-meta';
 
-  if (work.description) {
-  const aboutPara = document.createElement('p');
-  aboutPara.className = 'work-about';
-  aboutPara.textContent = work.description;
-  cardBody.appendChild(aboutPara);
 }
   
   // Year chip
