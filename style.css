@@ -193,26 +193,6 @@
   --color-info-rgb: 110, 90, 130;
 }
 
-.work-description {
-  margin-top: 0;
-  margin-bottom: var(--space-16);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-normal);
-  transition: max-height 0.3s ease;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.work-desc-toggle {
-  width: fit-content;
-  margin-top: -8px;
-  margin-bottom: var(--space-16);
-  cursor: pointer;
-}
-
 /* Base styles */
 html {
   font-size: var(--font-size-base);
