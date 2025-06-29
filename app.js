@@ -121,7 +121,7 @@ function renderHome() {
             <section class="hero">
                 <h1>Miłosz Krawczyk – Composer</h1>
                 <p class="phonetic">['miwoʂ 'kraftʂɨk]</p>
-                <p class="tagline">Raw, spiritual, poetic, aggressive, meditative, dramatic — and above all, deeply and genuinely Eastern European.</p>
+                <p class="tagline">"Raw, spiritual, poetic, aggressive, meditative, dramatic. Deeply and genuinely Eastern European."</p>
                 <div class="scroll-cue">
                     <div style="font-size: var(--font-size-2xl);">↓</div>
                 </div>
