@@ -530,27 +530,37 @@ function filterWorks(searchTerm) {
 
 // Route handling
 function handleRoute() {
-  const hash = window.location.hash.substring(2) || '/'; // Change to substring(2)
-  const route = hash === '/' ? 'home' : hash;
+  const hash = window.location.hash.substring(1) || '/';
+  let route = hash === '/' ? 'home' : hash.split('/')[1]; // Split on / to get the last part
 
-  // Rest of the function remains the same...
-}
-  
+  // Fallback if route is empty (should not happen, but just in case)
+  if (!route) route = 'home';
+
   // Hide all views
-  views.forEach(view => view.classList.remove('active'));
-  
-  // Show current view
+  document.querySelectorAll('.view').forEach(view => view.classList.remove('active'));
+
+  // Show current view (by ID)
   const targetView = document.getElementById(route);
   if (targetView) {
     targetView.classList.add('active');
     currentView = route;
   } else {
-    // Default to home if route not found
+    // Default to home
     document.getElementById('home').classList.add('active');
     currentView = 'home';
     window.location.hash = '#/';
   }
-  
+
+  // Update navigation active state
+  updateNavigation();
+
+  // Clear search when leaving works page
+  if (route !== 'works' && searchInput) {
+    searchInput.value = '';
+    filterWorks('');
+  }
+}
+
   // Update navigation active state
   updateNavigation();
   
