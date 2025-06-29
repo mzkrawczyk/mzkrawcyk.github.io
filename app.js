@@ -530,8 +530,11 @@ function filterWorks(searchTerm) {
 
 // Route handling
 function handleRoute() {
-  const hash = window.location.hash.substring(1) || '/';
-  const route = hash === '/' ? 'home' : hash.substring(1);
+  const hash = window.location.hash.substring(2) || '/'; // Change to substring(2)
+  const route = hash === '/' ? 'home' : hash;
+
+  // Rest of the function remains the same...
+}
   
   // Hide all views
   views.forEach(view => view.classList.remove('active'));
