@@ -682,7 +682,7 @@ select.form-control {
   --color-lavender-hover: #944fbe;
   --color-lavender-dark: #6b3e9a;
   --color-grey-disabled: #cccccc;
-  --hero-overlay: rgba(133, 92, 193, 0.45);
+  --hero-overlay: rgba(133, 92, 193, 0.8);
 
   /* Common style patterns */
   --focus-ring: 0 0 0 3px var(--color-focus-ring);
@@ -978,7 +978,7 @@ pre code {
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: url('./assets/sheet.jpg') center/cover;
+  background: url('./sheet.jpg') center/cover;
   background-color: var(--color-lavender);
   color: white;
   padding: var(--space-32) var(--space-16);
@@ -1283,7 +1283,7 @@ pre code {
 .portrait {
   width: 200px;
   height: 200px;
-  background: url('./assets/photo-square.jpg') center/cover;
+  background: url('./photo-square.jpg') center/cover;
   background-color: var(--color-secondary);
   border-radius: var(--radius-lg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
