@@ -46,10 +46,6 @@ function updateLanguageButtons() {
 
 // Event listeners
 function setupEventListeners() {
-    // Language switching
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-    });
 
     // Hash routing
     window.addEventListener('hashchange', handleRoute);
