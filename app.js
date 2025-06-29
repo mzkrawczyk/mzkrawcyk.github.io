@@ -359,33 +359,6 @@ function createWorkCard(work) {
   
   cardBody.appendChild(meta);
   
-  // Description and toggle button
-  if (work.description) {
-    // Create description paragraph, hidden by default
-    const descPara = document.createElement('p');
-    descPara.className = 'work-description hidden';
-    descPara.textContent = work.description;
-    cardBody.appendChild(descPara);
-
-    // Create toggle button
-    const toggleBtn = document.createElement('button');
-    toggleBtn.className = 'btn btn--outline btn--sm work-desc-toggle';
-    toggleBtn.textContent = 'Show More';
-
-    toggleBtn.addEventListener('click', () => {
-      const isHidden = descPara.classList.contains('hidden');
-      if (isHidden) {
-        descPara.classList.remove('hidden');
-        toggleBtn.textContent = 'Show Less';
-      } else {
-        descPara.classList.add('hidden');
-        toggleBtn.textContent = 'Show More';
-      }
-    });
-
-    cardBody.appendChild(toggleBtn);
-  }
-  
   // Premiere info
   const premiere = document.createElement('div');
   premiere.className = 'work-premiere';
