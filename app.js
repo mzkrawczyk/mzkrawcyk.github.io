@@ -1,7 +1,7 @@
 // Application data
 const data = {
   "works": [
-    {"title":"Étude in Musical Machinery","year":2025,"category":"Orchestral & Large Ensemble","duration":"4′","premiere":"24 May 2025, KMH Stockholm; cond. Emil Eliasson","instrumentation":"Wind orchestra","score_link":"","withdrawn":false,"needs_contact":true},
+    {"title":"Étude in Musical Machinery","year":2025,"category":"Orchestral & Large Ensemble","duration":"4′","premiere":"24 May 2025, KMH Stockholm; cond. Emil Eliasson","instrumentation":"Wind orchestra","score_link":"","withdrawn":false,"needs_contact":true,  "description": "A dynamic orchestral study exploring mechanical rhythms and textures."},
     {"title":"Bajki","year":2025,"category":"Orchestral & Large Ensemble","duration":"8′","premiere":"25 Apr 2025, KMH Stockholm; horn Hilda Melin; cond. Wolfgang Durán","instrumentation":"Horn & chamber ensemble","score_link":"https://www.svenskmusik.org/en/works/bajki-folk-tales-191818","withdrawn":false},
     {"title":"ANGELUS","year":2024,"category":"Orchestral & Large Ensemble","duration":"15′","premiere":"28 Feb 2025, KMH Stockholm; cond. Luca Gliozzi","instrumentation":"Symphony orchestra","score_link":"https://www.svenskmusik.org/en/works/n-g-e-l-v-s-angelus-191655","withdrawn":false},
     {"title":"STARGAZING II","year":2024,"category":"Orchestral & Large Ensemble","duration":"18′","premiere":"TBA","instrumentation":"Solo trombone & strings","score_link":"https://www.svenskmusik.org/en/works/nachtmusik-186428","withdrawn":false},
