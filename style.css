@@ -1500,3 +1500,23 @@ pre code {
   outline: var(--focus-outline);
   outline-offset: 2px;
 }
+
+.bio-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  margin-bottom: var(--space-24);
+}
+
+@media (min-width: 640px) {
+  .bio-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.bio-controls .language-switcher {
+  display: flex;
+  gap: var(--space-8);
+}
