@@ -238,7 +238,6 @@ function renderBio() {
           <div class="photo-credit">Photo: Birgit Püve / Arvo Pärt Centre</div>
         </div>
         <div class="bio-content">
-          <!-- Add language switcher here -->
           <div class="bio-controls">
             <div class="language-switcher">
               <button class="lang-btn ${currentLang === 'EN' ? 'active' : ''}" data-lang="EN">EN</button>
@@ -246,20 +245,18 @@ function renderBio() {
               <button class="lang-btn ${currentLang === 'PL' ? 'active' : ''}" data-lang="PL">PL</button>
             </div>
             <div class="tabs">
-              <button class="tab-btn active" onclick="showBio('short')">Short</button>
-              <button class="tab-btn" onclick="showBio('medium')">Medium</button>
-              <button class="tab-btn" onclick="showBio('long')">Long</button>
+              <button class="tab-btn ${currentBioLength === 'short' ? 'active' : ''}" onclick="showBio('short')">Short</button>
+              <button class="tab-btn ${currentBioLength === 'medium' ? 'active' : ''}" onclick="showBio('medium')">Medium</button>
+              <button class="tab-btn ${currentBioLength === 'long' ? 'active' : ''}" onclick="showBio('long')">Long</button>
             </div>
           </div>
           <div class="bio-text">
-            ${siteData.bios[currentLang]?.short || 'Bio content not available'}
+            ${siteData.bios[currentLang]?.[currentBioLength] || 'Bio content not available'}
           </div>
         </div>
       </div>
     </div>
   `;
-  
-  // Re-attach event listeners for the language buttons
   setupLanguageListeners();
 }
 
@@ -330,15 +327,8 @@ function toggleMoreInfo(button) {
 }
 
 function showBio(length) {
-    // Update active tab
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
-    
-    // Update content
-    const content = document.getElementById('bio-content');
-    if (content) {
-        content.innerHTML = formatBio(siteData.bios[currentLang][length]);
-    }
+  currentBioLength = length;
+  renderBio();
 }
 
 function formatBio(text) {
