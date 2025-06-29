@@ -46,6 +46,10 @@ function updateLanguageButtons() {
 
 // Event listeners
 function setupEventListeners() {
+    // Language switching
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
 
     // Hash routing
     window.addEventListener('hashchange', handleRoute);
@@ -117,7 +121,7 @@ function renderHome() {
             <section class="hero">
                 <h1>Miłosz Krawczyk – Composer</h1>
                 <p class="phonetic">['miwoʂ 'kraftʂɨk]</p>
-                <p class="tagline">"Raw, spiritual, poetic, aggressive, meditative, dramatic — and above all, deeply and genuinely Eastern European."</p>
+                <p class="tagline">Raw, spiritual, poetic, aggressive, meditative, dramatic — and above all, deeply and genuinely Eastern European.</p>
                 <div class="scroll-cue">
                     <div style="font-size: var(--font-size-2xl);">↓</div>
                 </div>
@@ -189,14 +193,11 @@ function renderWorks() {
                                                     <p>${work.workInfo || 'No additional information available.'}</p>
                                                 </div>
                                                 <div class="card-actions">
-  <!-- other buttons -->
-  <button class="btn btn--secondary btn--sm" onclick="toggleMoreInfo(this)">
-    More Info <span class="chevron">▼</span>
-  </button>
-</div>
-<div class="more-info hidden">
-  <p>More info text here...</p>
-</div>
+                                                    ${generateWorkButtons(work)}
+                                                    <button class="btn btn--secondary btn--sm" onclick="toggleMoreInfo(this)">
+                                                        More Info <span class="chevron">▼</span>
+                                                    </button>
+                                                </div>
                                             </div>
                                         `).join('')}
                                     </div>
@@ -232,41 +233,37 @@ function generateWorkButtons(work) {
 }
 
 function renderBio() {
-  const main = document.querySelector('.main-content');
-  main.innerHTML = `
-    <div class="container">
-      <div class="bio-layout">
-        <div class="portrait-section">
-          <div class="portrait"></div>
-          <div class="photo-credit">Photo: Birgit Püve / Arvo Pärt Centre</div>
-        </div>
-        <div class="bio-content">
-          <div class="bio-controls">
-            <div class="language-switcher">
-              <button class="lang-btn ${currentLang === 'EN' ? 'active' : ''}" data-lang="EN">EN</button>
-              <button class="lang-btn ${currentLang === 'SV' ? 'active' : ''}" data-lang="SV">SV</button>
-              <button class="lang-btn ${currentLang === 'PL' ? 'active' : ''}" data-lang="PL">PL</button>
+    const main = document.querySelector('.main-content');
+    main.innerHTML = `
+        <div class="view">
+            <div class="container">
+                <div class="bio-layout">
+                    <div class="portrait-section">
+                        <div class="portrait"></div>
+                        <p class="photo-credit">Photo: Birgit Püve / Arvo Pärt Centre</p>
+                    </div>
+                    <div class="bio-content-section">
+                        <div class="tabs">
+                            <button class="tab-btn active" onclick="showBio('short')">Short</button>
+                            <button class="tab-btn" onclick="showBio('medium')">Medium</button>
+                            <button class="tab-btn" onclick="showBio('long')">Long</button>
+                        </div>
+                        
+                        <div id="bio-content">
+                            ${formatBio(siteData.bios[currentLang].short)}
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="mb-16">Awards</h2>
+                <div class="awards-masonry">
+                    ${siteData.awards.map(award => `
+                        <div class="award-item">${award}</div>
+                    `).join('')}
+                </div>
             </div>
-            <div class="tabs">
-              <button class="tab-btn ${currentBioLength === 'short' ? 'active' : ''}" onclick="showBio('short')">Short</button>
-              <button class="tab-btn ${currentBioLength === 'medium' ? 'active' : ''}" onclick="showBio('medium')">Medium</button>
-              <button class="tab-btn ${currentBioLength === 'long' ? 'active' : ''}" onclick="showBio('long')">Long</button>
-            </div>
-          </div>
-          <div class="bio-text">
-            ${siteData.bios[currentLang]?.[currentBioLength] || 'Bio content not available'}
-          </div>
         </div>
-      </div>
-    </div>
-  `;
-  setupLanguageListeners();
-}
-
-function setupLanguageListeners() {
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-  });
+    `;
 }
 
 function renderContact() {
@@ -330,8 +327,15 @@ function toggleMoreInfo(button) {
 }
 
 function showBio(length) {
-  currentBioLength = length;
-  renderBio();
+    // Update active tab
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    // Update content
+    const content = document.getElementById('bio-content');
+    if (content) {
+        content.innerHTML = formatBio(siteData.bios[currentLang][length]);
+    }
 }
 
 function formatBio(text) {
